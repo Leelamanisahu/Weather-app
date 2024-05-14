@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="./Script.js" defer></script>
+</head>
+
+<body>
+    <nav class="w-full bg-slate-400 py-4 flex justify-center">
+        <h1 class="text-xl font-bold">Weather Forcasting app</h1>
+    </nav>
+    <section id="content" class="flex justify-center w-50 gap-4 my-10">
+        <div class="location flex flex-col gap-5 mx-5 w-80">
+            <label for="city" class="text-lg font-bold">Enter City Name</label>
+            <input type="text" id="city"
+                class="bg-gray-50 border border-gray-300  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 focus:text-black dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Delhi" required />
+            <button type="submit" id="submit"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 ">Submit</button>
+        </div>
+        <div class="w-60  bg-slate-400  flex  justify-between flex-1 items-center rounded-lg result-td">
+            <div class="flex flex-col p-4 gap-2">
+                <h2>Durg (2024-04-23)</h2>
+                <p>Temparature:30.8 <sup>o</sup>C</p>
+                <p>wind : 2.85 M/S</p>
+                <p>Humidity: 88%</p>
+            </div>
+            <div class="p-3 flex flex-col items-center gap-0">
+                <img  width="150"  src="https://openweathermap.org/img/wn/03d.png" alt="">
+                <p>Cloudy</p>
+            </div>
+        </div>
+        
+        <div class="result-week">
+           
+           
+           
+        </div>
+    </section>
+</body>
+
+</html>
