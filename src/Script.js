@@ -45,7 +45,6 @@ function renderDropdown() {
     console.log(isLocalStorageEmpty('recentCities'));
     // Hide the dropdown if local storage is empty
     if (isLocalStorageEmpty('recentCities')) {
-        console.log("dropdown working");
         dropdown.style.display = 'none';
         return;
     }
